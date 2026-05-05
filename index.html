@@ -173,6 +173,7 @@
 </html>
 
 <script>
+    document.getElementById("intro").style.display = "none";
     document.getElementById("btnYes").addEventListener("click", function () {
         const videoContainer = document.getElementById("videoContainer");
         const video = document.getElementById("yesVideo");
@@ -182,13 +183,13 @@
         redi();
 
     });
-    setTimeout(() => {
-        document.getElementById("intro").style.display = "none";
+    // setTimeout(() => {
+    //     document.getElementById("intro").style.display = "none";
 
-        const site = document.getElementById("site");
-        site.style.opacity = "1";
-        site.style.pointerEvents = "auto";
-    }, 33000);
+    //     const site = document.getElementById("site");
+    //     site.style.opacity = "1";
+    //     site.style.pointerEvents = "auto";
+    // }, 33000);
 
     document.addEventListener("click", () => {
         const video = document.querySelector(".scene-1");
