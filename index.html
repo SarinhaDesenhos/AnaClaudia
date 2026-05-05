@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ela</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+    /* Estilização opcional para o vídeo em tela cheia */
+    #videoContainer {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    #yesVideo {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+    }
+</style>
+
+<body>
+    <div id="intro">
+        <video src="midia/euFalando.mp4" autoplay muted class="scene-1"></video>
+        <section class="scene-2">
+            <span>Hygor</span>
+            <span>para</span>
+            <span>Ana Claudia❤️</span>
+            <div class="circle"></div>
+        </section>
+    </div>
+    <header>Para a Perigosa 💖</header>
+    <div id="site">
+        <section class="video-background-section" id="inicio">
+            <div class="videos">
+                <video class="video" autoplay muted loop src="./midia/elaUm.mp4"></video>
+                <video class="video" autoplay muted loop src="./midia/elaQuatro.mp4"></video>
+                <video class="video" autoplay muted loop src="./midia/elaDois.mp4"></video>
+            </div>
+            <div class="title-overlay">
+                <h1>Ana</h1>
+                <p>Do ultimo romantico para a cacheada mais perfeita desse mundo</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="sobre-ela">
+                <div class="foto"></div>
+                <div class="texto-container">
+                    <p>Esse site foi feito para registrar algumas coisas que aconteceram nesse meio tempo e que eu achei
+                        legais. Também, e principalmente, para enfatizar tudo que me lembra você!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Músicas que me lembram você</h2>
+            <div class="musicas" id="music">
+                <div class="musica">
+                    <div class="capa" style="background-image: url('./midia/diniz.png')"></div>
+                    <div class="descricao">
+                        <p><strong>Deusa</strong></p>
+                        <p>2ZDinizz</p>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=0tKvxIp29Js&ab_channel=FBC">Ouvir 🎵</a>
+                </div>
+                <div class="musica">
+                    <div class="capa" style="background-image: url('./midia/diniz.png')"></div>
+                    <div class="descricao">
+                        <p><strong>Te Encontra Na Lapa</strong></p>
+                        <p>2ZDinizz</p>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=hjyS7iVoQ9Y&ab_channel=Matu%C3%AA-Topic">Ouvir 🎵</a>
+                </div>
+                <div class="musica">
+                    <div class="capa" style="background-image: url('./midia/CasaDoAmor.png');"></div>
+                    <div class="descricao">
+                        <p><strong>Casa do Amor</strong></p>
+                        <p>Ferrugem</p>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=jBE_X3cMCyM&ab_channel=Orochi">Ouvir 🎵</a>
+                </div>
+                <div class="musica">
+                    <div class="capa" style="background-image: url('./midia/nozes.jpeg');"></div>
+                    <div class="descricao">
+                        <p><strong>Nossa Playlist</strong></p>
+                        <p>playlist + shash</p>
+                    </div>
+                    <a href="https://open.spotify.com/playlist/6ydcVratVDnvAQ6b38TWFM?si=f4bd69d11bab482f">Ouvir 🎵</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Mini Talarico</h2>
+            <div class="mini-talarico">
+                <div class="img"></div>
+                <video class="video" autoplay muted loop src="./midia/talaricao.mp4"></video>
+
+            </div>
+            <div class="texto">
+                Esse ai é o "Mini Talarico", um gato com aparência fofa, mas não se engane! Por trás do charme, é um
+                safado
+                que
+                tentou dar em cima da minha mulher. Um verdadeiro perigo com cara de anjo! Se avistar, denuncie
+                imediatamente.
+
+                <br>
+                <div class="rowBtns">
+                    <a href="https://wa.me/551170156082?text=Quero%20fazer%20uma%20denuncia.%20Achei%20o%20malandro!">Denunciar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Nossas fotos  <BR> ( NÃO É PARA APAGAR ! )</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="midia/nozes.jpeg" alt="Momento 1">
+                </div>
+                <div class="card">
+                    <img src="./midia/nozes2.jpeg" alt="Momento 2">
+                </div>
+                <div class="card">
+                    <img src="./midia/imgGenerica.png" alt="Momento 3">
+                    <p>ta faltando em!</p>
+                </div>
+                <div class="card">
+                    <img src="./midia/imgGenerica.png" alt="Momento 4">
+                    <p>ta faltando em!</p>
+                </div>
+            </div>
+        </section>
+        <section class="meetup-section" id="convite">
+            <div class="meetup-container">
+                <h1>Estou com saudades... vamos nos ver?</h1>
+                <div class="button-container" id="btns" style="position: relative;">
+
+                    <button id="btnYes" class="btn yes-btn" style="position: absolute; bottom: -45px; right: 140px;">Sim
+                        ❤️</button>
+                    <div id="videoContainer"
+                        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; z-index: 9999;">
+
+                        <video class="video" autoplay muted loop src="./midia/ney.mp4"></video>
+
+
+                        </video>
+                    </div>
+                    <button onclick="variar()" class="btn no-btn"
+                        style="position: absolute; bottom: -45px; right: 0px;">Não
+                        😢</button>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("btnYes").addEventListener("click", function () {
+        const videoContainer = document.getElementById("videoContainer");
+        const video = document.getElementById("yesVideo");
+
+        // Exibe o vídeo
+        videoContainer.style.display = "flex";
+        redi();
+
+    });
+    setTimeout(() => {
+        document.getElementById("intro").style.display = "none";
+
+        const site = document.getElementById("site");
+        site.style.opacity = "1";
+        site.style.pointerEvents = "auto";
+    }, 33000);
+
+    document.addEventListener("click", () => {
+        const video = document.querySelector(".scene-1");
+        video.muted = false;
+    }, { once: true });
+
+    function openModal2() {
+        const modal = document.getElementById("modal");
+        modal.style.display = "flex";
+    }
+
+    function closeModal2() {
+        const modal = document.getElementById("modal");
+        modal.style.display = "none";
+    }
+
+
+
+
+
+    // Modal functionality
+    const openModal = document.getElementById("openModal");
+    const modal = document.getElementById("modal-inflagrante");
+    const closeModal = document.getElementById("closeModal");
+
+    // Open modal on button click
+    openModal.addEventListener("click", () => {
+        modal.style.display = "flex";
+    });
+
+    // Close modal when clicking on the close button
+    closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    // Close modal when clicking outside the content
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+
+    function variar() {
+        const posicaoBottom = Math.floor(Math.random() * 100); // Limite para evitar o botão sair do contêiner
+        const posicaoRight = Math.floor(Math.random() * 100);
+
+        const noBtn = document.querySelector(".no-btn");
+        noBtn.style.bottom = `${posicaoBottom}%`;
+        noBtn.style.right = `${posicaoRight}%`;
+    }
+
+
+
+    function redi() {
+        // Configura o redirecionamento após 5 segundos
+        setTimeout(() => {
+            console.log("Redirecionando...");
+
+            window.location.assign("https://wa.me/551170156082?text=Acabei%20de%20ver%20o%20site%20e%2C%20por%20pura%20espont%C3%A2nea%20vontade%2C%20quero%20sair%20com%20voc%C3%AA!");
+        }, 5000);
+    }
+
+
+</script>

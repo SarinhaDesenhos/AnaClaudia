@@ -1,0 +1,758 @@
+        :root {
+            --black: #000000;
+            --red: #FF0000;
+            --charcoal: #1C1C1C;
+            --pink: #FFC0CB;
+            --white: #F9F9F9;
+            --gray: #D3D3D3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--white);
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        header {
+            background-color: var(--charcoal);
+            color: var(--red);
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        section {
+            flex: 1;
+            padding: 1rem;
+            /* margin-bottom: 500px; */
+        }
+
+        h2 {
+            font-family: 'Georgia', serif;
+            color: var(--pink);
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .card {
+            background-color: var(--charcoal);
+            border-radius: 1rem;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card p {
+            padding: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .sobre-ela {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .foto {
+            width: 100px;
+            height: 100px;
+            background-color: var(--red);
+            background-image: url('../midia/curintiaSorrindo.jpeg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            border: 3px solid var(--pink);
+            margin-bottom: -50px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .texto-container {
+            background-color: var(--gray);
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+            z-index: 0;
+            margin-top: 19px;
+        }
+
+        .texto-container p {
+            font-size: 1rem;
+            color: var(--black);
+        }
+
+        .presentes {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .presente {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: var(--charcoal);
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        .presente .foto-presente {
+            width: 120px;
+            height: 160px;
+            background-color: var(--gray);
+            background-image: url('../assets/beijos_cartas.jpg');
+            background-size: cover;
+            border-radius: 0.5rem;
+        }
+
+        .presente .foto-presente2 {
+            width: 120px;
+            height: 160px;
+            background-color: var(--gray);
+            background-image: url('../assets/aliança.jpg');
+            background-size: cover;
+            border-radius: 0.5rem;
+        }
+
+        .presente .foto-c {
+            width: 120px;
+            height: 160px;
+            background-color: var(--gray);
+            background-image: url('../assets/aliança.jpg');
+            background-size: cover;
+            border-radius: 0.5rem;
+        }
+
+        .presente .descricao {
+            flex: 1;
+            color: var(--white);
+            font-size: 0.875rem;
+        }
+
+        .musicas {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .musica {
+            background-color: var(--charcoal);
+            border-radius: 1rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .musica .capa {
+            width: 80px;
+            height: 80px;
+            background-color: var(--gray);
+            border-radius: 0.5rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .musica .descricao {
+            flex: 1;
+            color: var(--white);
+        }
+
+        .musica .descricao p {
+            margin-bottom: 0.5rem;
+        }
+
+        .musica a {
+            background-color: var(--red);
+            color: var(--white);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .musica a:hover {
+            background-color: var(--pink);
+        }
+
+
+        .musica button {
+            background-color: var(--red);
+            color: var(--white);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .musica button:hover {
+            background-color: var(--pink);
+        }
+
+        .mini-talarico {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            align-items: center;
+            padding: 1rem;
+
+        }
+
+        .mini-talarico .img {
+            background-color: black;
+            height: 300px;
+            border-radius: 0.5rem;
+            background-image: url('../midia/talaricoComTexto.jpeg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .mini-talarico .video {
+            background-color: black;
+            height: 300px;
+            border-radius: 0.5rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .texto {
+            grid-column: span 2;
+            background-color: var(--charcoal);
+            color: var(--white);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+        .texto button {
+            background-color: var(--red);
+            color: var(--white);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .texto a {
+            background-color: var(--red);
+            color: var(--white);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .rowBtns {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            flex-direction: row;
+            height: 45px;
+        }
+
+        /* modal mini talarico */
+        .modal {
+            display: none;
+            /* Initially hidden */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .mini-talarico-modal {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            align-items: center;
+            padding: 1rem;
+
+        }
+
+        .modal-content {
+            background-color: #000;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+        /* nava fotter */
+
+        nav {
+            opacity: 1;
+            background-color: var(--charcoal);
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: var(--red);
+        }
+
+        nav a {
+            background: none;
+            border: none;
+            color: inherit;
+            font-size: 0.875rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        nav a span {
+            margin-top: 0.25rem;
+        }
+
+        /* video home */
+        .video-background-section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35vh;
+            overflow: hidden;
+        }
+
+
+        .videos {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-background-section .video {
+            width: 33.33%;
+            /* Divide em 3 partes iguais */
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            text-align: center;
+        }
+
+        .title-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+        }
+
+        .title-overlay h1 {
+            color: #fff;
+            font-size: 4rem;
+            /* Destaque maior para o nome */
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .title-overlay p {
+            color: #fff;
+            font-size: 1rem 16px;
+            font-weight: 300;
+            line-height: 1.5;
+            max-width: 80%;
+            margin: 0 auto;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+
+        .video-background-section .videos::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Exposição reduzida */
+            z-index: 1;
+        }
+
+
+        /* marcar */
+
+        .meetup-section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 40vh;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .meetup-container {
+            max-width: 500px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .meetup-container h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #ff4d4d;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            position: relative;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+        }
+
+        .yes-btn {
+            background: #4caf50;
+            color: #fff;
+        }
+
+        .no-btn {
+            background: #f44336;
+            color: #fff;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* convite maste */
+
+        /* Modal Estilização */
+        .modal {
+            display: none;
+            /* Escondido por padrão */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .modal-content {
+            background: #2c2c2c;
+            color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content h2 {
+            margin-bottom: 20px;
+        }
+
+        .modal-content label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .modal-content input,
+        .modal-content select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .submit-button {
+            background: #800000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-button:hover {
+            background: #b30000;
+        }
+
+        .close-button {
+            background: transparent;
+            color: #fff;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: underline;
+        }
+
+
+        /* animacao inicial */
+
+
+        #intro {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: black;
+        }
+
+        .scene-1 {
+            position: fixed;
+            /* importante */
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: 9999;
+            animation: sceneOut 0.1s forwards;
+            animation-delay: 26s;
+            /* fim do vídeo */
+            /* tempo do vídeo */
+        }
+
+        .scene-2 {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            opacity: 0;
+            animation: pageIn 1s forwards;
+            animation-delay: 26.5s;
+        }
+
+        .scene-2 span {
+            font-size: 3rem;
+            font-family: "Shojumaru", system-ui;
+            animation: fadeIn 1s forwards;
+            animation-delay: 26.5s;
+            z-index: 1;
+            opacity: 0;
+        }
+
+        .scene-2 span:nth-child(1) {
+            animation-delay: 27.2s;
+            text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,
+                0 0 5px #fff;
+        }
+
+        .scene-2 span:nth-child(2) {
+            animation-delay: 28.5s;
+            text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,
+                0 0 5px #fff;
+        }
+
+        .scene-2 span:nth-child(3) {
+            color: red;
+            animation-delay: 30.2s;
+            text-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red, 0 0 4px red, 0 0 5px red;
+        }
+
+        .scene-2 .circle {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #000;
+            border: 2px solid #fff;
+            border-radius: 50%;
+
+            opacity: 0;
+            z-index: 1;
+
+            animation: circleFull 2s forwards;
+            animation-delay: 32s;
+        }
+
+        /* keyframe incial */
+
+
+        @keyframes circle {
+            from {
+                display: block;
+                scale: 0;
+                opacity: 0;
+                filter: brightness(100%);
+            }
+
+            to {
+                scale: 42;
+                opacity: 1;
+                filter: brightness(0%);
+            }
+        }
+
+        @keyframes circleFull {
+            0% {
+                scale: 0;
+                opacity: 0;
+                filter: brightness(100%);
+            }
+
+            40% {
+                scale: 42;
+                opacity: 1;
+                filter: brightness(0%);
+            }
+
+            100% {
+                scale: 42;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        @keyframes sceneOut {
+            from {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        @keyframes pageIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes arrow {
+            from {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(1.5rem);
+                opacity: 1;
+            }
+        }
+
+
+        /* Animação de fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+
+
+
+        #videoContainer {
+            display: none;
+            /* Esconde o contêiner por padrão */
+        }
+
+        @media (min-width: 1000px) {
+
+            /* Define a largura mínima para telas de desktop */
+            .invite-section {
+                display: flex;
+                /* Exibe o contêiner apenas em telas de desktop */
+            }
+        }
